@@ -16,7 +16,7 @@ public class ClientAPIKey
         var client = await TemporalClient.ConnectAsync(new("us-east-1.aws.api.temporal.io:7233")
         {
             Namespace = "testjlapikey.a2dd6",
-            ApiKey = Environment.GetEnvironmentVariable("TEMPORAL_API_KEY"),
+            ApiKey = Environment.GetEnvironmentVariable("TEMPORAL_DOTNET_API_KEY"),
             RpcMetadata = new Dictionary<string, string>()
             {
                 ["temporal-namesace"] = "testjlapikey.a2dd6",
